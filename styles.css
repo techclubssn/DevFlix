@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+/* MOBILE VIEW */
+
+/* Header Section */
+
+header {
+  background-image: url(images/bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  width: 90px;
+}
+
+.sign-in-btn {
+  background-color: red;
+  font-size: 15px;
+  padding: 4px 8px;
+  border: 0;
+  color: white;
+  border-radius: 3px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 28px 5%;
+}
+
+.header-details {
+  padding: 45px 5%;
+  text-align: center;
+}
+
+.email-input {
+  width: 90%;
+  height: 46px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.lg-btn {
+  height: 40px;
+  padding: 10px;
+}
+
+/* Content section */
+
+.content-section {
+  background-color: black;
+  border-top: 8px solid #222;
+  text-align: center;
+  padding: 50px 5%;
+}
+
+.title {
+  font-size: 28px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin: 16px 0px;
+}
+
+.content-image {
+  width: 80%;
+}
+
+/* Footer Section */
+
+.footer-text {
+  color: #757575;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.footer-link {
+  color: #757575;
+  font-size: 13px;
+  margin-bottom: 16px;
+  width: 50%;
+}
+
+footer {
+  background-color: black;
+  border-top: 8px solid #222;
+  padding: 50px 5%;
+}
+
+.footer-options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* TAB VIEW */
+
+@media only screen and (min-width: 500px) {
+  /* Header Section */
+  .sign-in-btn {
+    font-size: 17px;
+    padding: 7px 17px;
+  }
+
+  .header-details {
+    padding: 130px 45px;
+  }
+
+  /* Content section */
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 26px;
+  }
+
+  /* Footer Section */
+
+  .footer-link {
+    width: 33%;
+  }
+}
+
+/* DESKTOP VIEW */
+
+@media only screen and (min-width: 750px) {
+  /* Header Section */
+  .header-details {
+    padding: 130px 20%;
+  }
+
+  .email-form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .email-input {
+    width: 60%;
+  }
+
+  .lg-btn {
+    height: 52px;
+    font-size: 20px;
+    border-radius: 0;
+  }
+
+  /* Content section */
+  .content-section {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .content-image {
+    width: 50%;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  /* Footer Section */
+
+  .footer-link {
+    width: 25%;
+  }
+}
